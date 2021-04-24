@@ -7,11 +7,18 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const heroPost = undefined //allPosts[0]
+  const morePosts = allPosts //.slice(1)
   return (
     <>
-      <Layout>
+      <Layout style={{
+        backgroundImage: "url('./assets/home/solarsystem.jpg')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+        color: 'white',
+        marginTop: -64,
+        backgroundColor: 'black'
+      }}>
         <Head>
           <title>Epiphany37</title>
         </Head>

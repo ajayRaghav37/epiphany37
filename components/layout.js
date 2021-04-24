@@ -1,11 +1,11 @@
 import Footer from '../components/footer'
 import Meta from '../components/meta'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ style, preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div style={style} className="min-h-screen">
         <main>{children}</main>
       </div>
       <Footer />
